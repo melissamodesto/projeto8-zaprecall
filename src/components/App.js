@@ -1,10 +1,10 @@
-import InitialScreen from './InitialScreen';
+import Home from './Home';
 
 export default function App () {
     return (
-        <div>
-            <InitialScreen />
-        </div>
+        <>
+            <Home />
+        </>
     )
 }
 

@@ -4,6 +4,7 @@
 
 body {
     background-color: #FB6B6B;
+    margin-bottom: 90px;
 }
 
 .initial-screen {
@@ -12,7 +13,7 @@ body {
 }
 
 .initial-screen img {
-    margin-top: 148px;
+    margin: 148px 0 10px 0;
     width: 136px;
     height: 161px;
     
@@ -22,11 +23,11 @@ h3 {
     font-family: 'Righteous', cursive;
     color: #FFFFFF;
     font-size: 36px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
-.button {
+.start-button {
     width: 246px;
     height: 54px;
     background-color: #FFFFFF;
@@ -36,12 +37,58 @@ h3 {
     text-align: center;
     font-family: 'Recursive';
     padding: 18px;
-    margin: 30px 65px;
+    margin: 30px auto;
     color: #D70900;
     font-weight: 400;
     font-size: 18px;
 }
 
-.button:active {
+.start-button:active {
     transform: scale(0.98);
 }
+
+.header {
+    margin-top: 42px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header > img {
+    margin: 0 16px 24px 0;
+    width: 52px;
+    height: 62px;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Recursive';
+    padding: 24px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+.card-closed {
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #FFF;
+    margin: 0 38px 25px 38px;
+    padding: 26px 15px;
+    font-family: 'Recursive';
+    display: flex;
+    justify-content: space-between;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
