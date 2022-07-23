@@ -1,0 +1,68 @@
+.card-question, .card-answer {
+    margin: 25px auto;
+    width: 300px;
+    height: 132px;
+    background-color: #FFFFD5;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.card-question img {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.question {
+    height: 60px;
+    font-family: 'Recursive';
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin: 20px auto 0 auto;
+    padding: 16px;
+}
+
+.button-answer {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 0 16px;
+}    
+
+.button-answer div {
+    width: 86px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button-answer div:hover {
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+.button-answer div:first-child {
+    background-color: #FF3030;
+}
+
+.button-answer div:nth-child(2) {
+    background-color: #FF922E;
+}
+
+.button-answer div:last-child {
+    background-color: #2FBE34;
+}
+

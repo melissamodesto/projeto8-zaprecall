@@ -1,0 +1,28 @@
+ion-icon[name="close-circle"] {
+    color: red;
+}
+
+ion-icon[name="help-circle"] {
+    color: #FF922E;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
+}
+
+.card-closed .answer-dont-remember {
+    color: red;
+    text-decoration-line: line-through;
+    
+}
+
+.card-closed .answer-almost {
+    color: #FF922E;
+    text-decoration-line: line-through;
+    
+}
+
+.card-closed .answer-zap {
+    color: #2FBE34;
+    text-decoration-line: line-through;
+}

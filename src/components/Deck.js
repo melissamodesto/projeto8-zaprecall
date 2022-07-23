@@ -20,41 +20,30 @@ const cards = [
     },
     {
         question: "O ReactDOM nos ajuda __ ",
-        answer: "interagindo com a DOM para colocar componentes React na mesma"
+        answer: "Interagindo com a DOM para colocar componentes React na mesma"
     },
     {
         question: " Usamos o npm para __  ",
-        answer: " Usamos o npm para __ "
+        answer: "Usamos o npm para __ "
     },
     {
         question: "Usamos props para __ ",
-        answer: "passar diferentes informações para componentes"
+        answer: "Passar diferentes informações para componentes"
     },
     {
         question: "Usamos estado (state) para __ ",
-        answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
-    },
-    {
-        question: "Usamos estado (state) para __ ",
-        answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
-    },
-    {
-        question: "Usamos estado (state) para __ ",
-        answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
-    },
-    {
-        question: "Usamos estado (state) para __ ",
-        answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
+        answer: "Dizer ao React quais informações devem ser renderizadas na tela quando atualizadas"
     }]
 
 export default function Deck() {
 
     let numberCards = 1;
     let deck = cards.length;
+    let shuffleCards = cards.sort(() => Math.random() - 0.5);
 
     return (
         <>
-            {cards.map(card => <Cards question={card.question} answer={card.answer} number={numberCards++} deck={deck} />)}
+            {shuffleCards.map(card => <Cards question={card.question} answer={card.answer} number={numberCards++} deck={deck} />)}
             <Footer deck={deck} />
         </>
     )
