@@ -1,5 +1,5 @@
 ion-icon[name="close-circle"] {
-    color: red;
+    color: #FF3030;
 }
 
 ion-icon[name="help-circle"] {
@@ -11,7 +11,7 @@ ion-icon[name="checkmark-circle"] {
 }
 
 .card-closed .answer-dont-remember {
-    color: red;
+    color: #FF3030;
     text-decoration-line: line-through;
     
 }

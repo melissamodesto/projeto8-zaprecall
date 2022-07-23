@@ -2,6 +2,7 @@ import React from 'react';
 import Deck from '../Deck';
 import setinha from './setinha.png';
 import CardAnswer from '../CardAnswer/CardAnswer';
+import './styleCardQuestion.css';
 
 
 export default function CardsQuestion(card) {
