@@ -7,7 +7,7 @@ function CardsClose(card) {
 
     return (
         <div className='deck'> 
-            <div className='card-closed'>
+            <div className='second-card-closed'>
                 <h2 className={card.status}>Flashcard {card.number}</h2>
                 <ion-icon className={card.status} name={card.icon}></ion-icon>
             </div>

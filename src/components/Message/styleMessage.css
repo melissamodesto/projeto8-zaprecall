@@ -1,6 +1,6 @@
 .message {
     width: 100vw;
-    height: 70px;
+    height: 80px;
     background-color: white;
     position: fixed;
     display: flex;
@@ -8,8 +8,18 @@
     justify-content: center;
     flex-direction: column;
     position: fixed;
-    bottom: 70px;
+    bottom: 130px;
     z-index: 1;
+    animation: expand 300ms linear forwards;
+}
+
+@keyframes expand {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 80px;
+  }
 }
 
 .message p {

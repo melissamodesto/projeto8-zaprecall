@@ -1,5 +1,6 @@
 import React from 'react'
 import StartRecall from './StartRecall'
+import logo from './image/logo-zap.png'
 
 function ScreenOne() {
 
@@ -8,11 +9,11 @@ function ScreenOne() {
     return (
         start ?
             <>
-                <div className="initial-screen">
-                    <center><img src="./image/logo.png" alt="logo" /></center>
+                <div className='initial-screen'>
+                    <center><img src={logo} alt='logo' /></center>
                     <h3>ZapRecall</h3>
                 </div>
-                <div className="start-button" onClick={() => setStart(!start)}>Iniciar Recall!</div>
+                <div className='start-button' onClick={() => setStart(!start)}>Iniciar Recall!</div>
             </> : <StartRecall />
     )
 }

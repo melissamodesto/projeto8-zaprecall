@@ -1,68 +1,83 @@
-.card-question, .card-answer {
-    margin: 25px auto;
-    width: 300px;
-    height: 132px;
-    background-color: #FFFFD5;
-    border-radius: 5px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    position: relative;
+.card-question,
+.card-answer {
+  margin: 25px auto;
+  width: 300px;
+  height: 132px;
+  background-color: #ffffd5;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transform-style: preserve-3d;
 }
 
+.card-question {
+  animation: expand 300ms linear;
+}
+
+@keyframes expand {
+  from {
+    height: 70px;
+  }
+  to {
+    height: 132px;
+  }
+}
+
+
 .card-question img {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
 }
 
 .question {
-    height: 60px;
-    font-family: 'Recursive';
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-    margin: 20px auto 0 auto;
-    padding: 16px;
+  height: 60px;
+  font-family: "Recursive";
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin: 20px auto 0 auto;
+  padding: 16px;
 }
 
 .button-answer {
-    height: 38px;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    padding: 0 16px;
-}    
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  padding: 0 16px;
+}
 
 .button-answer div {
-    width: 86px;
-    height: 38px;
-    border-radius: 5px;
-    font-family: 'Recursive';
-    font-weight: 400;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: aliceblue;
-    padding: 8px;
-    cursor: pointer;
+  width: 86px;
+  height: 38px;
+  border-radius: 5px;
+  font-family: "Recursive";
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .button-answer div:hover {
-    transform: scale(1.05);
-    color: #FFF;
+  transform: scale(1.05);
+  color: #fff;
 }
 
 .button-answer div:first-child {
-    background-color: #FF3030;
+  background-color: #ff3030;
 }
 
 .button-answer div:nth-child(2) {
-    background-color: #FF922E;
+  background-color: #ff922e;
 }
 
 .button-answer div:last-child {
-    background-color: #2FBE34;
+  background-color: #2fbe34;
 }
-
