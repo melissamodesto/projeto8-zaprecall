@@ -1,0 +1,34 @@
+.message {
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.message p {
+    width: 85%;
+    height: auto;
+    font-family: Recursive;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.message h2 {
+    font-family: Recursive;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+

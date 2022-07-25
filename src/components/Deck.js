@@ -38,14 +38,13 @@ const cards = [
 export default function Deck() {
 
     let numberCards = 0;
-    let deck = cards.length;
     let shuffleCards = cards.sort(() => Math.random() - 0.5);
     let showCards = shuffleCards.slice(4);
+    let deck = showCards.length;
     
-
     return (
         <>
-            {showCards.map(card => <Cards question={card.question} answer={card.answer} number={numberCards++} deck={deck} />)}
+            {showCards.map((card, index) => <Cards question={card.question} answer={card.answer} number={numberCards++} deck={deck} key={index}/>)}
             <Footer number={numberCards} />
         </>
     )

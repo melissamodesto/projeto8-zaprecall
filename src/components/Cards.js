@@ -1,14 +1,12 @@
 import React from 'react'
 import CardsQuestion from './CardQuestion/CardQuestion'
 
-import Deck from './Deck'
-
 export default function Cards(card) {
 
     const [cardClosed, setCardClosed] = React.useState(true)
 
     let number = card.number + 1;
-
+   
     return (
         cardClosed ?
             <>
@@ -20,7 +18,7 @@ export default function Cards(card) {
             </div>
             </> : (
                 <>
-                    <CardsQuestion question={card.question} answer={card.answer} />
+                    <CardsQuestion question={card.question} answer={card.answer} deck={card.deck}/>
                 </>
             )
     )
