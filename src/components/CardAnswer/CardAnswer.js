@@ -1,10 +1,10 @@
 import React from 'react';
-import Deck from '../Deck';
 import CardClose from '../CardClose/CardClose';
+import '../CardClose/styleCardClose.css';
 
 export default function CardAnswer (card) {
     
-    const [cardClose, setCardClose] = React.useState(false)
+    const [cardClose, setCardClose] = React.useState(false)    
     
     return (
         !cardClose ?
@@ -20,7 +20,7 @@ export default function CardAnswer (card) {
                     </div> 
                 </div>
             </div> : (
-                <CardClose status={cardClose} question={card.question} answer={card.answer} />
+                <CardClose status={cardClose} number={card.numberCards} deck={card.deck} question={card.question} answer={card.answer} />
             )
     )
 }
