@@ -6,9 +6,10 @@
   background-color: #fff;
   margin: 0 auto 25px auto;
   padding: 26px 15px;
-  font-family: "Recursive";
+  font-family: 'Recursive', sans-serif;
   display: flex;
   justify-content: space-between;
+  animation: reduce 300ms linear;
 }
 
 ion-icon[name="close-circle"] {
@@ -36,10 +37,6 @@ ion-icon[name="checkmark-circle"] {
 .second-card-closed .answer-zap {
   color: #2fbe34;
   text-decoration-line: line-through;
-}
-
-.second-card-closed {
-  animation: reduce 300ms linear;
 }
 
 @keyframes reduce {

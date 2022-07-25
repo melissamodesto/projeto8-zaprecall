@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
     bottom: 130px;
     z-index: 1;
     animation: expand 300ms linear forwards;
@@ -25,7 +24,7 @@
 .message p {
     width: 85%;
     height: auto;
-    font-family: Recursive;
+    font-family: 'Recursive', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -34,7 +33,7 @@
 }
 
 .message h2 {
-    font-family: Recursive;
+    font-family: 'Recursive', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
